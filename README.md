@@ -1,4 +1,5 @@
-project overview
+PROJECT OVERVIEW
+
 This group project is done as part of requrement for software engineering cousre at alx.
 in this assignment we achieved some of the following learning objectives as per the project description
  .How does a shell work
@@ -6,6 +7,7 @@ in this assignment we achieved some of the following learning objectives as per 
 .How to manipulate the environment of the current process
 .What is the difference between a function and a system call
 program specification
+
 simple shell 1.0
 Simple shell 0.1
 Write a UNIX command line interpreter.

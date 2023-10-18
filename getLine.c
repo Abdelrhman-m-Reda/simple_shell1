@@ -11,6 +11,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
 	ssize_t r = 0;
 	size_t len_p = 0;
+
 	if (!*len) /* if nothing left in the buffer, fill it */
 	{
 		/*bfree((void **)info->cmd_buf);*/
@@ -53,6 +54,7 @@ ssize_t get_input(info_t *info)
 	static size_t i, j, len;
 	ssize_t r = 0;
 	char **buf_p = &(info->arg), *p;
+
 	_putchar(BUF_FLUSH);
 	r = input_buf(info, &buf, &len);
 	if (r == -1) /* EOF */
@@ -91,6 +93,7 @@ ssize_t get_input(info_t *info)
 ssize_t read_buf(info_t *info, char *buf, size_t *i)
 {
 	ssize_t r = 0;
+
 	if (*i)
 		return (0);
 	r = read(info->readfd, buf, READ_BUF_SIZE);
@@ -113,6 +116,7 @@ int _getline(info_t *info, char **ptr, size_t *length)
 	size_t k;
 	ssize_t r = 0, s = 0;
 	char *p = NULL, *new_p = NULL, *c;
+
 	p = *ptr;
 	if (p && length)
 		s = *length;

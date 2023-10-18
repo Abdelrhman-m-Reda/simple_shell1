@@ -8,6 +8,7 @@
 int _strlen(char *s)
 {
 	int i = 0;
+
 	if (!s)
 		return (0);
 	while (*s++)
@@ -59,6 +60,7 @@ char *starts_with(const char *haystack, const char *needle)
 char *_strcat(char *dest, char *src)
 {
 	char *ret = dest;
+
 	while (*dest)
 		dest++;
 	while (*src)
